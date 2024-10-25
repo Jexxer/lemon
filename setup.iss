@@ -14,9 +14,6 @@ Source: "lemon.exe"; DestDir: "{app}"; Flags: ignoreversion
 Name: "{group}\Lemon"; Filename: "{app}\lemon.exe"
 Name: "{group}\Uninstall Lemon"; Filename: "{uninstallexe}"
 
-;[Run] ; The checkbox to "Launch Now" has been removed by commenting this out
-;Filename: "{app}\lemon.exe"; Description: "Launch Lemon"; Flags: nowait postinstall skipifsilent
-
 [Code]
 function AddToPath(Param: String): Boolean;
 var
